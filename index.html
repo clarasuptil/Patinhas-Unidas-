@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patinhas Unidas 🐾</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- DECORAÇÃO -->
+    <div class="decor decor1">🐾</div>
+    <div class="decor decor2">💗</div>
+    <div class="decor decor3">🐶</div>
+    <div class="decor decor4">🐱</div>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-paw"></i>
+            </div>
+
+            <div>
+                <h1>Patinhas <span>Unidas</span></h1>
+                <small>Amor que transforma vidas 🐾</small>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <a href="#inicio" class="active">
+                <i class="fa-solid fa-house"></i>
+                Início
+            </a>
+
+            <a href="#sobre">
+                <i class="fa-solid fa-heart"></i>
+                Sobre nós
+            </a>
+
+            <a href="#impacto">
+                <i class="fa-solid fa-paw"></i>
+                Nosso impacto
+            </a>
+
+            <a href="#empreendedoras">
+                <i class="fa-solid fa-users"></i>
+                Equipe
+            </a>
+        </nav>
+
+        <button class="notification" onclick="mostrarNotificacao()">
+            <i class="fa-regular fa-bell"></i>
+            <span>3</span>
+        </button>
+
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="inicio">
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <span class="tag">
+                    🐾 Uma rede feita com amor
+                </span>
+
+                <h2>
+                    Onde cada
+                    <span>patinha</span>
+                    conta.
+                </h2>
+
+                <p>
+                    Bem-vindo ao Patinhas Unidas! Um espaço criado para
+                    conectar pessoas, pets e histórias que transformam
+                    vidas.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#feed" class="btn primary">
+                        Explorar histórias
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#impacto" class="btn secondary">
+                        Conheça nosso impacto
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="blob"></div>
+
+                <div class="pet-card">
+
+                    <div class="pet-image">
+                        <span>🐶</span>
+                    </div>
+
+                    <div class="pet-info">
+                        <h3>Thor</h3>
+                        <p>Esperando por uma família 💗</p>
+
+                        <div class="pet-status">
+                            <span class="online"></span>
+                            Disponível para adoção
+                        </div>
+                    </div>
+
+                    <button onclick="curtirPet(this)">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="floating-heart">💗</div>
+                <div class="floating-paw">🐾</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STORIES -->
+        <section class="stories-section">
+
+            <div class="section-title">
+                <div>
+                    <span>CONHEÇA</span>
+                    <h2>Nossas histórias</h2>
+                </div>
+
+                <a href="#">Ver todas <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="stories">
+
+                <div class="story new-story">
+                    <div class="story-circle add">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <p>Adicionar</p>
+                </div>
+
+                <div class="story">
+                    <div class="story-circle pink">🐶</div>
+                    <p>Mel</p>
+                </div>
+
+                <div class="story">
+                    <div class="story-circle orange">🐱</div>
+                    <p>Simba</p>
+                </div>
+
+                <div class="story">
+                    <div class="story-circle purple">🐕</div>
+                    <p>Luna</p>
+                </div>
+
+                <div class="story">
+                    <div class="story-circle blue">🐈</div>
+                    <p>Nina</p>
+                </div>
+
+                <div class="story">
+                    <div class="story-circle green">🐶</div>
+                    <p>Bob</p>
+                </div>
+
+                <div class="story">
+                    <div class="story-circle yellow">🐱</div>
+                    <p>Amora</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEED -->
+        <section class="feed-section" id="feed">
+
+            <div class="feed">
+
+                <!-- POST -->
+                <article class="post">
+
+                    <div class="post-header">
+
+                        <div class="profile">
+
+                            <div class="avatar pink-avatar">
+                                🐾
+                            </div>
+
+                            <div>
+                                <h3>Patinhas Unidas</h3>
+                                <span>@patinhasunidas • 2h</span>
+                            </div>
+
+                        </div>
+
+                        <button class="dots">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="post-text">
+
+                        <p>
+                            Hoje foi dia de muito carinho por aqui! 🥰🐶
+                        </p>
+
+                        <p>
+                            Cada hospedagem realizada ajuda o nosso projeto
+                            a proporcionar mais cuidado e esperança para
+                            animais que precisam de um lar.
+                        </p>
+
+                    </div>
+
+                    <div class="post-photo photo-one">
+                        <div class="photo-content">
+                            🐶
+                            <span>Dia de carinho!</span>
+                        </div>
+                    </div>
+
+                    <div class="post-actions">
+
+                        <button onclick="toggleLike(this)">
+                            <i class="fa-regular fa-heart"></i>
+                            <span>128</span>
+                        </button>
+
+                        <button onclick="focarComentario(this)">
+                            <i class="fa-regular fa-comment"></i>
+                            <span>24</span>
+                        </button>
+
+                        <button onclick="compartilhar()">
+                            <i class="fa-solid fa-share"></i>
+                            <span>Compartilhar</span>
+                        </button>
+
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="comments">
+                        <strong>@maria.pet</strong>
+                        Que trabalho lindo! 💗🐾
+                    </div>
+
+                </article>
+
+
+                <!-- POST 2 -->
+                <article class="post">
+
+                    <div class="post-header">
+
+                        <div class="profile">
+
+                            <div class="avatar orange-avatar">
+                                🐱
+                            </div>
+
+                            <div>
+                                <h3>Patinhas Unidas</h3>
+                                <span>@patinhasunidas • 5h</span>
+                            </div>
+
+                        </div>
+
+                        <button class="dots">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="post-text">
+
+                        <p>
+                            🧡 Conheça a Amora!
+                        </p>
+
+                        <p>
+                            Ela chegou ao abrigo precisando de muito amor
+                            e hoje está pronta para encontrar uma família.
+                        </p>
+
+                    </div>
+
+                    <div class="post-photo photo-two">
+                        <div class="photo-content">
+                            🐱
+                            <span>Amora procura um lar 🏡</span>
+                        </div>
+                    </div>
+
+                    <div class="post-actions">
+
+                        <button onclick="toggleLike(this)">
+                            <i class="fa-regular fa-heart"></i>
+                            <span>96</span>
+                        </button>
+
+                        <button>
+                            <i class="fa-regular fa-comment"></i>
+                            <span>18</span>
+                        </button>
+
+                        <button onclick="compartilhar()">
+                            <i class="fa-solid fa-share"></i>
+                            <span>Compartilhar</span>
+                        </button>
+
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+
+                <div class="welcome-card">
+
+                    <div class="paw-big">
+                        🐾
+                    </div>
+
+                    <h3>Faça parte dessa união!</h3>
+
+                    <p>
+                        Aqui, cada curtida, compartilhamento e hospedagem
+                        ajuda a espalhar amor.
+                    </p>
+
+                    <button onclick="seguirProjeto()">
+                        <i class="fa-solid fa-heart"></i>
+                        Seguir projeto
+                    </button>
+
+                </div>
+
+
+                <div class="impact-card">
+
+                    <div class="impact-header">
+                        <div>
+                            <span>JUNTOS JÁ CONSEGUIMOS</span>
+                            <h3>Nosso impacto 💗</h3>
+                        </div>
+
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+
+                    <div class="numbers">
+
+                        <div>
+                            <strong>87</strong>
+                            <span>Pets ajudados</span>
+                        </div>
+
+                        <div>
+                            <strong>32</strong>
+                            <span>Adoções</span>
+                        </div>
+
+                        <div>
+                            <strong>156</strong>
+                            <span>Hospedagens</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="about" id="sobre">
+
+            <div class="about-image">
+                <div class="about-circle">
+                    🐶
+                </div>
+
+                <span class="about-decoration">💗</span>
+                <span class="about-decoration paw">🐾</span>
+            </div>
+
+            <div class="about-text">
+
+                <span class="mini-title">
+                    SOBRE O PROJETO
+                </span>
+
+                <h2>
+                    Mais que um hotel.
+                    <span>Uma causa.</span>
+                </h2>
+
+                <p>
+                    O Patinhas Unidas nasceu com o propósito de oferecer
+                    hospedagem segura, confortável e cheia de carinho para
+                    os pets enquanto seus tutores precisam estar longe.
+                </p>
+
+                <p>
+                    Parte dos lucros é destinada ao abrigo Patinhas Unidas,
+                    ajudando animais abandonados a receberem alimentação,
+                    cuidados e novas oportunidades.
+                </p>
+
+                <div class="values">
+
+                    <div>
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Amor</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-shield-dog"></i>
+                        <span>Segurança</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <span>Solidariedade</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMPACTO -->
+        <section class="impact" id="impacto">
+
+            <div class="impact-title">
+
+                <span>O QUE FAZEMOS</span>
+
+                <h2>
+                    Seu pet recebe amor.
+                    <br>
+                    <strong>Outro pet também.</strong>
+                </h2>
+
+                <p>
+                    Ao escolher o Patinhas Unidas, você não está apenas
+                    contratando um serviço. Você está ajudando a transformar
+                    uma vida.
+                </p>
+
+            </div>
+
+            <div class="impact-grid">
+
+                <div class="impact-box">
+                    <div class="icon">🏠</div>
+                    <h3>Hospedagem</h3>
+                    <p>
+                        Um espaço confortável, seguro e cheio de carinho
+                        para o seu pet.
+                    </p>
+                </div>
+
+                <div class="impact-box">
+                    <div class="icon">🍖</div>
+                    <h3>Cuidados</h3>
+                    <p>
+                        Alimentação, brincadeiras, atenção e cuidados
+                        personalizados.
+                    </p>
+                </div>
+
+                <div class="impact-box">
+                    <div class="icon">🐾</div>
+                    <h3>Resgate</h3>
+                    <p>
+                        Parte dos nossos lucros ajuda animais que precisam
+                        de proteção.
+                    </p>
+                </div>
+
+                <div class="impact-box">
+                    <div class="icon">💗</div>
+                    <h3>Novos lares</h3>
+                    <p>
+                        Ajudamos a conectar animais com famílias cheias
+                        de amor.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EMPREENDEDORAS -->
+        <section class="team" id="empreendedoras">
+
+            <div class="section-title centered">
+
+                <span>QUEM ESTÁ POR TRÁS</span>
+
+                <h2>
+                    Nossas empreendedoras 💕
+                </h2>
+
+                <p>
+                    Três meninas, um sonho e muitas patinhas para ajudar.
+                </p>
+
+            </div>
+
+            <div class="team-grid">
+
+                <div class="team-card">
+
+                    <div class="team-avatar maria-clara">
+                        👩🏻
+                    </div>
+
+                    <h3>Maria Clara</h3>
+                    <span>Co-fundadora</span>
+
+                    <p>
+                        Apaixonada por animais e responsável por transformar
+                        ideias em ações.
+                    </p>
+
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+
+                </div>
+
+
+                <div class="team-card featured">
+
+                    <div class="team-avatar maria-fernanda">
+                        👩🏻‍🦱
+                    </div>
+
+                    <h3>Maria Fernanda</h3>
+                    <span>Co-fundadora</span>
+
+                    <p>
+                        Cuida da experiência dos pets e acredita que
+                        pequenos gestos podem mudar vidas.
+                    </p>
+
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+
+                </div>
+
+
+                <div class="team-card">
+
+                    <div class="team-avatar nicolly">
+                        👩🏼
+                    </div>
+
+                    <h3>Nicolly</h3>
+                    <span>Co-fundadora</span>
+
+                    <p>
+                        Responsável pela comunicação e por espalhar o
+                        propósito do Patinhas Unidas.
+                    </p>
+
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="cta">
+
+            <div class="cta-paws">
+                🐾 🐾 🐾
+            </div>
+
+            <h2>
+                Vamos espalhar mais amor?
+            </h2>
+
+            <p>
+                Junte-se ao Patinhas Unidas e faça parte dessa história.
+            </p>
+
+            <button onclick="mostrarMensagem()">
+                Quero fazer parte
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-paw"></i>
+            </div>
+
+            <div>
+                <h2>Patinhas Unidas</h2>
+                <p>Amor que transforma vidas 🐾</p>
+            </div>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#impacto">Impacto</a>
+            <a href="#empreendedoras">Equipe</a>
+
+        </div>
+
+        <div class="footer-social">
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Patinhas Unidas • Feito com 💗 por Maria Clara,
+            Maria Fernanda e Nicolly
+        </div>
+
+    </footer>
+
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button class="top-button" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script>
+
+        function toggleLike(button) {
+
+            const icon = button.querySelector("i");
+            const number = button.querySelector("span");
+
+            button.classList.toggle("liked");
+
+            if (button.classList.contains("liked")) {
+
+                icon.classList.remove("fa-regular");
+                icon.classList.add("fa-solid");
+
+                number.textContent =
+                    parseInt(number.textContent) + 1;
+
+            } else {
+
+                icon.classList.remove("fa-solid");
+                icon.classList.add("fa-regular");
+
+                number.textContent =
+                    parseInt(number.textContent) - 1;
+            }
+        }
+
+
+        function curtirPet(button) {
+
+            button.classList.toggle("liked");
+
+            const icon = button.querySelector("i");
+
+            icon.classList.toggle("fa-regular");
+            icon.classList.toggle("fa-solid");
+
+        }
+
+
+        function seguirProjeto() {
+
+            const button =
+                document.querySelector(".welcome-card button");
+
+            button.innerHTML =
+                '<i class="fa-solid fa-check"></i> Seguindo!';
+
+            button.classList.add("following");
+
+        }
+
+
+        function compartilhar() {
+
+            if (navigator.share) {
+
+                navigator.share({
+                    title: "Patinhas Unidas",
+                    text: "Conheça o projeto Patinhas Unidas 🐾"
+                });
+
+            } else {
+
+                alert(
+                    "Compartilhe o Patinhas Unidas com seus amigos! 🐾💗"
+                );
+
+            }
+        }
+
+
+        function mostrarNotificacao() {
+
+            alert(
+                "🔔 Você tem 3 novidades no Patinhas Unidas!"
+            );
+
+        }
+
+
+        function mostrarMensagem() {
+
+            alert(
+                "💗 Obrigado por querer fazer parte do Patinhas Unidas! Juntos somos mais fortes. 🐾"
+            );
+
+        }
+
+
+        function focarComentario(button) {
+
+            alert(
+                "💬 A área de comentários está pronta para receber sua mensagem!"
+            );
+
+        }
+
+
+        // APARECER ELEMENTOS AO ROLAR
+        const elementos =
+            document.querySelectorAll(
+                ".impact-box, .team-card, .post, .about-text"
+            );
+
+        const observer =
+            new IntersectionObserver(
+                (entries) => {
+
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("show");
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.15
+                }
+            );
+
+
+        elementos.forEach(element => {
+
+            element.classList.add("hidden");
+            observer.observe(element);
+
+        });
+
+    </script>
+
+</body>
+</html>
